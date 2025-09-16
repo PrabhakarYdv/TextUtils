@@ -91,7 +91,7 @@ export default function TextBox(props) {
                 <form>
                     <div className="form-group">
                         <label htmlFor="exampleFormControlTextarea1" style={{ fontSize: "25   px", fontWeight: "bold" }}>Enter text to Analyze</label>
-                        <textarea className="form-control" value={text} onChange={onChangeBox} id="exampleFormControlTextarea1" rows="10"></textarea>
+                        <textarea className="form-control" value={text} onChange={onChangeBox} id="exampleFormControlTextarea1" rows="10" autoFocus></textarea>
                     </div>
                 </form>
                 <button className="btn btn-primary mx-1" onClick={btnHandleSpeech}>{isSpeaking ? "Stop" : "Read"}</button>

@@ -13,10 +13,12 @@ export default function TextBox(props) {
 
     const returnWordCount = () => {
         if (text) {
-            let textArray = text.trim().split(" ")
+            let textArray = text.trim().split(" ").filter((element)=>{
+                return element.length!==0
+            })
             let count = textArray.length
             totalWord = count
-            return count + (count === 1 ? " Word" : " Words")
+            return count + (count<=1 ? " Word" : " Words")
         }
         return "0 Word"
 
@@ -110,7 +112,7 @@ export default function TextBox(props) {
                 </div>
                 <h4 style={{ fontWeight: "bold" }}>Preview</h4>
                 <div id='line' className="line"></div>
-                <p className="preiview">{text.length > 0 ? text : "Nothing to priview"}</p>
+                <p className="preview">{text.trim().length > 0 ? text : "Nothing to priview !"}</p>
             </div>
 
         </>

@@ -101,7 +101,7 @@ nav ul li.toogle-container {
   margin-top: 25px;
 }
 
-.preiview {
+.preview {
   /* border: 1px dashed black; */
   margin: 10px;
   padding: 20px;
@@ -128,13 +128,13 @@ nav ul li.toogle-container {
 .light-mode {
   background-color: #FFFFFF;
   color: #000000;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .dark-mode {
   background-color: #121212;
   color: #FFFFFF;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .about-heading {

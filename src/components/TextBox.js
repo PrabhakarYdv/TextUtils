@@ -88,7 +88,7 @@ export default function TextBox(props) {
 
     return (
         <>
-            <h1 className='mainHeading' style={{ color: props.mode === "light-mode" ? "red" : "white"} }>Welcome To TextUtils Webiste</h1>
+            <h1 className='mainHeading' style={{ color: props.mode === "light-mode" ? "#c49999" : "white"} }>Welcome To TextUtils Webiste</h1>
             <div className="container my-5">
                 <form>
                     <div className="form-group">

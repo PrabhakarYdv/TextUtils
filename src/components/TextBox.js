@@ -96,11 +96,11 @@ export default function TextBox(props) {
                         <textarea className="form-control" value={text} onChange={onChangeBox} id="exampleFormControlTextarea1" rows="10" autoFocus></textarea>
                     </div>
                 </form>
-                <button className="btn btn-primary mx-1" onClick={btnHandleSpeech}>{isSpeaking ? "Stop" : "Read"}</button>
-                <button className="btn btn-primary mx-1" onClick={btnUpperCase}>UpperCase</button>
-                <button className="btn btn-primary mx-1" onClick={btnLowerCase}>LowerCase</button>
-                <button className="btn btn-primary mx-1" onClick={btnClear}>Clear</button>
-                <button className="btn btn-primary mx-1" onClick={btnRemoveExtraSpace}>Remove Extra Space</button>
+                <button  className="btn btn-primary mx-1 my-2" onClick={btnHandleSpeech}>{isSpeaking ? "Stop" : "Read"}</button>
+                <button  className="btn btn-primary mx-1 my-2" onClick={btnUpperCase}>UpperCase</button>
+                <button  className="btn btn-primary mx-1 my-2" onClick={btnLowerCase}>LowerCase</button>
+                <button  className="btn btn-primary mx-1 my-2" onClick={btnClear}>Clear</button>
+                <button  className="btn btn-primary mx-1 my-2" onClick={btnRemoveExtraSpace}>Remove Extra Spaces</button>
             </div>
 
             <div className="container">
